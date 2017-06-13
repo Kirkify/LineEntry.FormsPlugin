@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC223BFD-7D34-400F-8629-9D663DFC225C}</ProjectGuid>
+    <Description>Line Entry Control For Xamarin Forms</Description>
+    <PackageId>LineEntry.FormsPlugin</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Kirk Davies</Authors>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <OutputType>Library</OutputType>
+    <RootNamespace>LineEntry.FormsPlugin.NuGet</RootNamespace>
+    <UsePartialTypes>false</UsePartialTypes>
+    <AssemblyName>LineEntry.FormsPlugin.NuGet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Owners>Kirk Davies</Owners>
+    <Title>Line Entry Control For Xamarin Forms</Title>
+    <Summary>Line Entry Control For Xamarin Forms</Summary>
+    <PackageProjectUrl>https://github.com/Kirkify/LineEntry</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/Kirkify/LineEntry/blob/master/license.md</PackageLicenseUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LineEntry.FormsPlugin\LineEntry.FormsPlugin.csproj">
+      <Project>{E7680FB0-E4BB-4B39-A5AD-396E1BDADCB4}</Project>
+      <Name>LineEntry.FormsPlugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LineEntry.FormsPlugin.Android\LineEntry.FormsPlugin.Android.csproj">
+      <Project>{FCB0A8A2-4164-4508-AB74-E27430DD3983}</Project>
+      <Name>LineEntry.FormsPlugin.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LineEntry.FormsPlugin.iOS\LineEntry.FormsPlugin.iOS.csproj">
+      <Project>{25E613B0-7072-45C6-88C1-2E729564D661}</Project>
+      <Name>LineEntry.FormsPlugin.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging">
+      <Version>0.1.157-dev</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
+</Project>

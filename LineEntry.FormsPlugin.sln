@@ -1,0 +1,35 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LineEntry.FormsPlugin", "LineEntry.FormsPlugin\LineEntry.FormsPlugin.csproj", "{E7680FB0-E4BB-4B39-A5AD-396E1BDADCB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LineEntry.FormsPlugin.Android", "LineEntry.FormsPlugin.Android\LineEntry.FormsPlugin.Android.csproj", "{FCB0A8A2-4164-4508-AB74-E27430DD3983}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LineEntry.FormsPlugin.iOS", "LineEntry.FormsPlugin.iOS\LineEntry.FormsPlugin.iOS.csproj", "{25E613B0-7072-45C6-88C1-2E729564D661}"
+EndProject
+Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "LineEntry.FormsPlugin.NuGet", "LineEntry.FormsPlugin.NuGet\LineEntry.FormsPlugin.NuGet.nuproj", "{DC223BFD-7D34-400F-8629-9D663DFC225C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7680FB0-E4BB-4B39-A5AD-396E1BDADCB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7680FB0-E4BB-4B39-A5AD-396E1BDADCB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7680FB0-E4BB-4B39-A5AD-396E1BDADCB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7680FB0-E4BB-4B39-A5AD-396E1BDADCB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCB0A8A2-4164-4508-AB74-E27430DD3983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCB0A8A2-4164-4508-AB74-E27430DD3983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCB0A8A2-4164-4508-AB74-E27430DD3983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCB0A8A2-4164-4508-AB74-E27430DD3983}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25E613B0-7072-45C6-88C1-2E729564D661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25E613B0-7072-45C6-88C1-2E729564D661}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25E613B0-7072-45C6-88C1-2E729564D661}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25E613B0-7072-45C6-88C1-2E729564D661}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC223BFD-7D34-400F-8629-9D663DFC225C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC223BFD-7D34-400F-8629-9D663DFC225C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC223BFD-7D34-400F-8629-9D663DFC225C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC223BFD-7D34-400F-8629-9D663DFC225C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
